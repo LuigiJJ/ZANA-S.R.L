@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> ZANA S.R.L </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff8f0;
+    }
+    header {
+      background-color: #00bfa5;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 60px;
+    }
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-color: #e0f7fa;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      color: #00796b;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .hero button {
+      background-color: #00796b;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .section h2 {
+      color: #00796b;
+      margin-bottom: 1rem;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .feature {
+      background-color: white;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 200px;
+    }
+    .image-section {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .image-section img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    #info {
+      background-color: #fff3e0;
+      padding: 2rem;
+      margin: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: none;
+    }
+    footer {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+  <script>
+    function mostrarInfo() {
+      document.getElementById("info").style.display = "block";
+      window.scrollTo(0, document.getElementById("info").offsetTop);
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <img src="zana.png" alt="Logo ZANA">
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#producto">Producto</a>
+      <a href="#info">Nuestra Misión</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Zana : Salud que te acompaña</h1>
+    <p>La pulsera inteligente para los adultos mayores </p>
+    <button onclick="mostrarInfo()">Conoce más</button>
+  </section>
+
+  <section class="image-section">
+    <img src="bracare.png" alt="Foto del producto Bracare">
+  </section>
+
+  <section id="info">
+    <h2>¿Qué busca ZANA?</h2>
+    <p>ZANA nace para brindar una solución accesible, moderna y segura a los adultos mayores. Los bracares (pulseras inteligentes) permite monitorear signos vitales como ritmo cardíaco, saturación y temperatura sin necesidad de procedimientos invasivos, todo conectado a una app con IA.</p>
+  </section>
+
+  <section class="section" id="producto">
+    <h2>¿Qué hacen los Bracares?</h2>
+    <div class="features">
+      <div class="feature"> Miden el ritmo cardíaco</div>
+      <div class="feature"> Miden la temperatura corporal</div>
+      <div class="feature"> Miden la saturación</div>
+      <div class="feature"> Trabajan con IA (Inteligencia artificial) </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    © 2025 ZANA S.R.L. | contactozana@gmail.com
+  </footer>
+
+</body>
+</html>
